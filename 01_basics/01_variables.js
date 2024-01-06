@@ -5,8 +5,8 @@ accountCity = "pokhara"
 let accountState;
 
 /*
-prefer not to use
-var variable because of issue in block scope and functional scope
+prefer not to use var 
+variable because of issue in block scope and functional scope
 */
 
 // accountId= 3;  // not allowed (const vaariable can not be changed)
