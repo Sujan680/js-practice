@@ -8,6 +8,8 @@ console.log(2+2);  console.log(1+8);
 let name= "sujan";
 let age=34;
 let isLogin=true;
+
+console.log(typeof age); 
   
 
 // number=> 2^53
