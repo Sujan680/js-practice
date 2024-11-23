@@ -1,7 +1,7 @@
 const accountId = 1211;
 let accountEmail = "sujanmagar@gmail.com";
 var accountPassword = "12345";
-accountCity = "pokhara"
+accountCity = "pokhara"   // it is considered as string 
 let accountState;
 
 /*
@@ -16,5 +16,9 @@ accountEmail = "sujan122@gmail.com"
 accountPassword= "3243"
 
 //console.log(accountId);
+
+console.log(accountCity);
+console.log(typeof accountCity);
+
 
 console.table([accountEmail, accountId, accountPassword, accountCity,accountState])
