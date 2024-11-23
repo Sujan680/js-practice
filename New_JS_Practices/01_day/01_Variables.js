@@ -95,3 +95,19 @@ students["fullName"] = "Magar";
 console.log(students["fullName"]);
 console.log(students.age);
 
+// From the Chai aur Javscript
+
+const accountId = 12313;
+let accountEmail = "sujanmagar1234@gmail.com";
+var accountPassword = "1234sujan%";
+accountCity = "Pokhara";
+
+// accountId = 22424; // not allowed to update
+
+accountEmail = "magarsujan566@gmail.com";
+
+console.log(accountEmail);
+
+console.log(accountId);
+console.table([accountEmail, accountId, accountPassword,accountCity])
+
