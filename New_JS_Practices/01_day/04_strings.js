@@ -118,3 +118,13 @@ paddtext = paddtext.padStart(5, "1") // 11115
 paddtext = paddtext.padEnd(4, "0") // 5000
 
 console.log(paddtext); // 11115
+
+let character = "ASDFGHJKl";
+console.log(character.indexOf("J")); //6
+
+let trimstring = "   Helllo     ";
+console.log(trimstring.trimStart());
+console.log(trimstring.length);
+let trimstring1 = "Hello   "
+console.log(trimstring1.trimEnd());
+console.log(trimstring1.length);
