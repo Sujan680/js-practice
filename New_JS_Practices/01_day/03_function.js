@@ -83,4 +83,45 @@ myObj = {
   console.log(myObj.myCars.car1);
   console.log(myObj.myCars.car2);
   console.log(myObj.myCars.car3);
+
+
+//   Objects methods are actions that can be performed on objects 
+
+const students = {
+    firstName: "Sujan",
+    lastName: "Magar",
+    age: 25,
+    fullName: function() {
+        return this.firstName + " " + this.lastName // this refer to the students object
+    }
+}
+  console.log(students.fullName());
   
+
+// using () JSON.stringify()
+let myString  = JSON.stringify(students); // objects can be converted to a string with JSON methods
+console.log(myString);
+
+
+// Using Object.values() 
+
+const myArray = Object.values(students);
+console.log(myArray);
+
+
+// Js Object Constructors
+// Constructor Function for person Objects
+function Person(first, last, age, eye) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.eyeColor = eye;
+}
+
+// create a Person object
+
+const myFather = new Person("John", "Doe", 25, "blue")
+
+console.log(`My father is ${myFather.age} years old`);
+
+
