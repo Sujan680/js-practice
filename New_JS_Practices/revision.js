@@ -105,3 +105,10 @@ console.log(newDate.getMonth()) // 10
 console.log(newDate.getDay());  // 2
 console.log(newDate.getFullYear()); // 2024
 
+
+const arr1 = [1,2,3,4,5];
+const arr2 = [8,9,7];
+
+// spread operator
+const newArr = [...arr1, ...arr2];
+console.log(newArr);
