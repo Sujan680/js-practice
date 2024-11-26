@@ -128,3 +128,16 @@ console.log(trimstring.length);
 let trimstring1 = "Hello   "
 console.log(trimstring1.trimEnd());
 console.log(trimstring1.length);
+
+
+// String interpolation
+let firstName = "John";
+let lastName = "Doe";
+
+let message = `Welcome ${firstName}, ${lastName}!`;
+
+console.log(message);
+
+
+let number = 67;
+console.log(number.toFixed(3)); // 67.000
