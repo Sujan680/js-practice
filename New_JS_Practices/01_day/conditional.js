@@ -72,6 +72,8 @@ console.log('Regular day.');
 }
 
 
+// Simple grade calculation program
+
 let score = 90;
 let grade;
 switch(true) {
@@ -98,4 +100,3 @@ switch(true) {
 }
 
 console.log("Your grade is", grade);
-
