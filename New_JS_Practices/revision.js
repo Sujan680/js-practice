@@ -112,3 +112,46 @@ const arr2 = [8,9,7];
 // spread operator
 const newArr = [...arr1, ...arr2];
 console.log(newArr);
+
+
+const myGirls = ["Cecilie", "Lone"];
+
+const myBoys = ["Emil", "Tobias", "Linus"];
+
+const myChildren = myGirls.concat(myBoys);
+console.log(myChildren);
+
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+console.log(fruits.splice(2,2, "Grapes", "Papaya"));
+console.log(fruits);
+
+console.log(fruits.splice(1,1));
+
+console.log(fruits);
+
+console.log(fruits.indexOf("Banana"));
+
+
+// using find array methods
+const numbers = [4, 9, 16, 25, 36];
+let first = numbers.find(myFunction);
+
+function myFunction(value, index, array) {
+    return value > 16
+}
+console.log("The number greater than 25 is", first);
+
+
+// Array methods
+
+console.log(Array.isArray("Sujan"));
+
+console.log(Array.from("Sujan"));
+
+let score1 = 234;
+let score2 = 343;
+let score3 = 654;
+
+console.log(Array.of(score1, score2, score3)); // [234, 343, 654]
+ 
