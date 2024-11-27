@@ -112,3 +112,19 @@ JsUser.greetingTwo = function() {
     console.log(`Hello Js user, ${this.name}`);
 }
 console.log(JsUser.greetingTwo());
+
+
+// Object De-structure
+
+const course = {
+    id: 123,
+    courseName: "Javascript",
+    price: 999,
+    courseInstructor: "Sujan",
+};
+
+const {id} = course;
+console.log("The course id is:",id);
+
+const {courseName: name} = course;
+console.log(name);
