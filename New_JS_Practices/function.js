@@ -181,4 +181,52 @@ const calcSquare = (val) => console.log(val * val);
 
  nums.forEach(calcSquare);
 
+// forEach doesnot return new array
+// map methos in arrays
+// creates a new array with the result of some operation. 
 
+// arr.map(callbackFnx(value, index, array))
+
+// creates new by performing some operation on array but does not modify original array
+
+
+let myArr = [11,22,33,44,55,66,77];
+
+myArr.map((val, indx, arr) => {
+console.log(`The value ${val} is at index ${indx} of array [${arr}]`);
+})
+
+let newArr = myArr.map((val) => {
+    return val * 2;
+})
+console.log(newArr);
+console.log(myArr);
+
+// Filter methods in array 
+
+// Creates new array of elements based on the condition applied
+
+const totalMarks = [77,88,99,98,76,67,56,60, 23, 45, 55]
+
+let filterMethod = totalMarks.filter((val) => {
+    return val >= 60;
+})
+
+console.log("The new aray after filter method are", totalMarks);
+console.log("The original array are", totalMarks);
+
+
+
+// Reduce method in js : gives a single value as olp
+// Performs some operation and reduces the array to a single valu.
+// it returns single value
+
+let myMarks = [23,56,76,11,90,88];
+
+let reduceArr = myMarks.reduce((acc, val) => acc + val , 0 )
+console.log("Total marks is",reduceArr);
+
+let max = myMarks.reduce((acc, val) => {
+    return acc > val ? acc : val;
+})
+console.log("The maxumum value is", max);
