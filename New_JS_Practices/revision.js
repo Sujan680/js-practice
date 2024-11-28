@@ -230,4 +230,56 @@ function greet(greeting, ...names) {
     console.log(`${greeting}, ${names.join(' and ')}!`);
   }
   
-  greet('Hello', 'Alice', 'Bob', 'Charlie')
+  greet('Hello', 'Alice', 'Bob', 'Charlie');
+
+
+// Arrow function
+
+const greet1 = (name) => ` Hello, ${name}`;
+console.log(greet1("Js developer"));
+
+// map and filter method
+
+const myNumbers = [1,2,3,4,5,6,7,8];
+
+let newNum = myNumbers.map((val) => val * 2);
+console.log(newNum);
+
+let evens = myNumbers.filter(val => val % 2 === 0);
+console.log("Evens",evens);
+
+
+// SLice and spliece:
+// slice returns the shallow copy of a portion of an aray 
+
+const myFruits = ['apple', 'banana', 'cherry', 'papaya']
+console.log("Slice",myFruits.slice(2,4));
+console.log("Original array", myFruits);
+
+const veggies = ['carrot', 'broccoli', 'spinach', 'cucumber'];
+console.log("Splice", veggies.splice(1,2, 'Sujan'));
+console.log("Original array", veggies);
+
+// Destructuring 
+
+const person = ['sujan', 'ram', 'sita', 'hari', 'gita'];
+
+const [name1, name2, name3] = person;
+
+console.log(name1);
+console.log(name2);
+console.log(name3);
+
+
+// Rest and Spread operator 
+
+const Add = (...numbers) => numbers.reduce((acc, val) =>
+    acc + val , 0
+);
+console.log("Sum :" , Add(1,2,3,4,5,6,7));
+
+const oneArr = [1,2,3,4];
+const twoArr = [4,5,6];
+
+const newArray = [...oneArr, ...twoArr] ;
+console.log(newArray);
