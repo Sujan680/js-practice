@@ -155,3 +155,79 @@ let score3 = 654;
 
 console.log(Array.of(score1, score2, score3)); // [234, 343, 654]
  
+
+// functions in JS 
+
+function loginUserMessage(username) {
+    return `${username} just loggined In`
+}
+// console.log(loginUserMessage("Sujan"));
+
+
+function loginUserMessage(username) {
+    if(username === undefined){  // can be done as (!username)
+        console.log("Please enter a username");
+        return // after this nothing will be done
+    }
+    return `${username} just loggined In`
+}
+console.log(loginUserMessage());
+
+function calculateCartPrice(...num) {  //...num this is rest operator
+    return num;
+}
+console.log(calculateCartPrice(12,23,34,555));
+
+// The rest operator in JavaScript, represented by three dots (...), 
+// allows you to collect multiple elements or arguments into a single array or object. 
+
+// another examples 
+
+function myCartSection(num1, num2, ...num){
+    return num;
+}
+console.log(myCartSection(12, 22, 33, 55));
+
+
+function sum(...numbers) {
+    return numbers.reduce((acc, val) => acc + val, 0);
+}
+
+console.log(sum(1,2,3,4,5,6)); // 21
+
+
+// Array Destructuring 
+
+const colors = ['red', 'green', 'blue', 'white', 'pink', 'yellow'];
+
+const [one, two, ...restColors] = colors;
+
+console.log(one);
+console.log(two);
+console.log(restColors);
+
+// here restColors collects the remaining elements of the array after one and two
+
+// Object  destructuring
+
+const user = {
+    name: "sujan",
+    age: 25,
+    city: 'pokhara',
+    profession: 'Engineer'
+};
+
+const {name: username, age, ...restDetails} = user;
+
+console.log(username);
+console.log(age);
+console.log(restDetails);
+
+
+// The rest operator collects elements while spread operator expands the elements
+
+function greet(greeting, ...names) {
+    console.log(`${greeting}, ${names.join(' and ')}!`);
+  }
+  
+  greet('Hello', 'Alice', 'Bob', 'Charlie')

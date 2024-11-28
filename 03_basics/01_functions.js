@@ -14,7 +14,7 @@ addTwoNumbers(2,3);
 function addTwoNumbers(number1, number2) {
     let result = number1*number2;
     return result;
-    console.log(number1+number2);
+    console.log(number1+number2); // not reachable
 }
 
 const result = addTwoNumbers(4,3);
