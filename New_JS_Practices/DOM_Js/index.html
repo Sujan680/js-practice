@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM in Js</title>
+  </head>
+  <body style="background-color: #443232; color: white">
+    <div class="parent">
+      <div class="day">Moday</div>
+      <div class="day">Tuesday</div>
+      <div class="day">Wednesday</div>
+      <div class="day">Thursday</div>
+    </div>
+
+    <ul id="images">
+      <li>
+        <img
+        id="img0"
+          src="https://images.pexels.com/photos/20189671/pexels-photo-20189671/free-photo-of-flowers-around-logo-board-near-building-wall.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load"
+          alt="Flowers aronund"
+          width="200px"
+        />
+      </li>
+      <li>
+        <img
+          id="img1"
+          src="https://images.pexels.com/photos/19433442/pexels-photo-19433442/free-photo-of-antique-buildings-in-town-in-italy.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+          alt="house image" width="200px"
+        />
+      </li>
+      <li>
+        <img
+          id="img2"
+          src="https://images.pexels.com/photos/29465901/pexels-photo-29465901/free-photo-of-elegant-christmas-mantel-with-candles-and-garland.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load"
+          alt="house image" width="200px"
+        />
+      </li>
+      <li>
+        <img
+          id="img3"
+          src="https://images.pexels.com/photos/29267541/pexels-photo-29267541/free-photo-of-woman-photographing-from-open-top-bus-in-city.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load"
+          alt="house image" width="200px"
+        />
+      </li>
+    </ul>
+
+    <script>
+
+// event listner
+
+// document.getElementById('img3').onclick = () => {
+//         alert("HI")
+// }
+
+// document.getElementById('img2').addEventListener('click', () => {
+//         alert("This is clicked")
+// })
+ document.getElementById('images').addEventListener('click', (e) => {
+        console.log("Clicked inside the list");
+        
+}, false)
+
+ document.getElementById('img3').addEventListener('click', (e) => {
+        console.log("Image 4th clicked");
+e.stopPropagation();
+}, false) // this is called event bubbling
+
+// document.getElementById('images').addEventListener('click', (e) => {
+//         console.log("Clicked inside the list");
+        
+// }, true)
+
+// document.getElementById('img3').addEventListener('click', (e) => {
+//         console.log("Image 4th clicked");
+     
+// }, true) // event capturing
+
+
+// type, timestampp, defalultPrevented
+// target, toElement, srcElement, currentTarget
+// clientX, clientY, screenX, screenY
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      //       const parent = document.querySelector(".parent");
+      //       console.log(parent);
+      //       console.log(parent.children);
+      //       console.log(parent.children[3]);
+
+      //       // ways for printing all values of list
+      //       for (let i = 0; i < parent.children.length; i++) {
+      //         console.log(parent.children[i].innerHTML);
+      //       }
+
+      //       parent.children[2].style.color = "yellow";
+
+      //       const div = document.createElement("div");
+      //       console.log(div);
+      //       div.className = "main";
+      //       div.id = "myId";
+      //       div.setAttribute("title", "generated title");
+      //       div.style.backgroundColor = "green";
+      //       //    div.innerText = 'Sujan Magar'
+
+      //       const addText = document.createTextNode("SUJAN MAGAR");
+      //       div.appendChild(addText);
+      //       document.body.appendChild(div);
+    </script>
+  </body>
+</html>

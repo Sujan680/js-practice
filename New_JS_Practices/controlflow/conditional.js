@@ -125,3 +125,13 @@ const people = [
   let names = people.filter((item) => item.isMarried === false);
   console.log(names);
   
+
+  const numbers = [1,2,3,4,5,6,7,8,9];
+
+  const newNum = numbers
+  .map((num) => num * 10)
+  .map((num) => num + 1)
+  .filter((num) => num >= 45)
+
+  console.log(newNum);
+  
